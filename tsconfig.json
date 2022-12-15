@@ -11,9 +11,16 @@
     "outDir": "./dist",
     "strict": true,
     "strictNullChecks": true,
+    "resolveJsonModule": true,
     "baseUrl": "./",
     "incremental": true,
     "strictPropertyInitialization": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@application/*": ["./src/application/*"],
+      "@helpers/*": ["./src/helpers/*"],
+      "@infra/*": ["./src/infra/*"],
+      "@test/*": ["./test/*"]
+    }
   }
 }
